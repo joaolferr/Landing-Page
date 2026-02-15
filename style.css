@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    /* background-color: #240046; */
+}
+
+.hero img {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    filter: blur(7px);
+    opacity: 0.5;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, #3c096c, #10002b);
+    opacity: 0.5; /* Preto com 50% de opacidade */
+    z-index: 1; /* Garante que a cor fique acima da imagem */;
+}
