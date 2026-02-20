@@ -30,13 +30,84 @@ body {
         height: 100vh;
         width: 100%;
         background-color: #10002b;
+        color: white;
     }
 
     .about-card {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 2em;
+        padding: 2em;
         height: 50em;
         width: 100em;
         background-color: #3c096c;
         border-radius: 20px;
         border-color: #3c096c;
-        border-style: solid;
+        border-style: solid;      
+    }
+
+    .about-card h1 {
+        font-size: 50px;
+        margin-top: 2em;
+        margin-left: 1em;
+    }
+
+    .about-card p {
+        font-size: 25px;
+        margin-top: 2em;
+        margin-left: 2em;
+        line-height: 1.9em;
+    }
+
+    .about-card img {
+        display: flex;
+        flex-direction: row;
+        width: 150px;
+        height: auto;
+    }
+
+    .profile-picture{
+        position: absolute;
+        top:20em;
+        right: 8em;
+    }
+
+    .photo {
+    width: 300px !important;        /* Tamanho da foto - aumenta se quiser maior */
+    height: 300px;       /* Mantém quadrado pra ficar redondo */
+    border-radius: 50%;
+    object-fit: cover;   /* Garante que a foto preenche o círculo */
+    border: 5px solid #fff;  /* Borda pra destacar */
+    }
+
+    .icons {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    width: 150px;
+    margin-top: 2em;
+    margin-left: 2.5em;
+    }
+
+    button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        height: 50px;
+        background-color: #10002b;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 20px;
+        margin-left: 35em;
+        margin-top: 6em;
+    }
+   
+    button:hover {
+        cursor: pointer;
     }
