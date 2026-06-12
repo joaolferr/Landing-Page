@@ -59,7 +59,7 @@ a {
   width: 100%;
   z-index: 100;
   font-family: var(--font-display);
-  border-bottom: 1px solid var(--text-muted);
+  background-color: var(--bg-deep);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(6.5px);
   -webkit-backdrop-filter: blur(6.5px);
@@ -67,14 +67,13 @@ a {
 
 #navbar ul {
   display: flex;
-  gap: 20px;
   font-size: 18px;
 }
 
 #navbar ul li {
   display: inline-block;
   margin-right: 20px;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 #navbar ul li a {
@@ -87,8 +86,20 @@ a {
 }
 
 #presentation {
-  font-size: 70px;
+  line-height: 4.7rem;
+}
+
+
+#presentation h1 {
   position: relative;
+}
+
+#presentation span {
+  color: var(--text-primary);
+}
+
+#presentation-buttons {
+  margin-top: 1em;
 }
 
 
@@ -100,9 +111,14 @@ a {
   height: 100vh;
   text-align: center;
   background-image:
+  radial-gradient(circle, rgba(61, 58, 92, 0.4) 1px, transparent 1px),
   radial-gradient(ellipse 65% 55% at 50% 45%, rgba(124,58,237,0.2) 0%, transparent 65%),
   linear-gradient(to bottom, transparent 60%, var(--bg-deep) 100%);
-  background-color: var(--bg-surface);
+  background-color: var(--bg-deep);
+  background-size: 
+   32px 32px,
+   100% 100%,
+   100% 100%;;
 }
 
 #about-section,
@@ -116,6 +132,27 @@ a {
   padding: 50px;
   margin: 1.5em;
   font-family: var(--font-body);
+}
+
+.text {
+  color: var(--text-secondary);
+  font-size: 1.3em;
+  font-weight: 100;
+  line-height: 2em;
+}
+
+.view-projects-button {
+  padding: 1em 1.7em;
+  border-radius: var(--radius);
+  background-color: var(--accent);
+  margin-right: 1em;
+}
+
+.work-button {
+  padding: 1em 1.7em;
+  border-radius: var(--radius);
+  background-color: var(--bg-surface);
+  border: 1px solid var(--bg-border);
 }
 
 .about-title {
@@ -204,6 +241,8 @@ a {
 
 .professional-name {
   font-family: var(--font-display);
+  font-size: 5rem;
+  font-weight: 800;
   color: var(--text-primary);
   background: linear-gradient(140deg, var(--text-primary) 55%, var(--accent-light) 100%);
   -webkit-background-clip: text;
