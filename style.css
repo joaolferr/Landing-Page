@@ -121,7 +121,6 @@ a {
    100% 100%;;
 }
 
-#about-section,
 #contact-section {
   display: flex;
   flex-direction: column;
@@ -132,6 +131,50 @@ a {
   padding: 50px;
   margin: 1.5em;
   font-family: var(--font-body);
+}
+
+#about-section{
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 4rem;
+  align-items: start;
+  justify-content: start;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 6rem 2rem;
+  
+}
+
+#about-section span{
+  color: var(--text-primary);
+}
+.about-left {
+  padding-right: 1em;
+}
+
+.aboutMe-text {
+  color: var(--accent-light);
+  font-family: var(--font-mono);
+  font-size: 16px;
+  margin-bottom: 2rem;
+}
+
+.about-title {
+  font-size: 36px;
+  color: var(--text-primary);
+  margin-bottom: 2rem;
+}
+
+
+.about-text {
+  font-family: var(--font-body);
+  color: var(--text-secondary)
+}
+
+.diviser{
+  border-bottom: 2px solid var(--text-primary); /* Linha sólida e escura */
+    padding-bottom: 15px; /* Distância entre o texto e a linha */
+    margin-bottom: 2rem;
 }
 
 .text {
@@ -155,18 +198,6 @@ a {
   border: 1px solid var(--bg-border);
 }
 
-.about-title {
-  padding: 1.2em;
-  text-align: start;
-  font-size: 36px;
-  margin-bottom: 20px;
-}
-
-.about-text {
-  font-size: 24px;
-  padding: 2em;
-  text-align: start;
-}
 
 .contact-title {
   padding: 1.2em;
@@ -207,14 +238,13 @@ a {
 
 .photo-container {
   position: relative;
-  width: 400px;
-  height: 400px;
-  border-radius: 50%;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 10%;
   overflow: hidden;
   margin-bottom: 20px;
-  border: 1px solid var(--accent);
+  border: 1px solid var(--bg-border);
   object-fit: cover;
-  transition: transform 0.7s ease, box-shadow 0.7s ease;
 }
 
 .photo-container img {
@@ -225,12 +255,8 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 70% 15%;
+  object-position: 65% 15%;
   
-}
-
-.photo-container:hover {
-  transform: translateY(-10px);
 }
 
 .job-title {
@@ -251,4 +277,21 @@ a {
   color: transparent;
 }
 
+.cards {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  background-color: var(--bg-surface);
+  line-height: 2em;
+}
+
+.cards h3 {
+  font-family: var(--font-body);
+  color: var(--text-primary);
+}
+
+.cards p {
+  color: var(--text-secondary);
+  font-family: var(--font-body);
+}
 
