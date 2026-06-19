@@ -16,7 +16,7 @@
       rel="stylesheet"
     />
   </head>
-
+  
   <body>
     <header>
       <nav id="navbar">
@@ -54,19 +54,18 @@
     <section id="about-section">
       <div class="about-left">
         <div class="photo-container">
-          <img src="/Profile Picture.png" alt="" />
+          <img src="Profile Picture.png" alt="" />
         </div>
         <div class="about-left-texts">
-          <p>Precisão <br> <br>
-             Entrega <br> <br>
-             Evolução
-          </p>
+          <div class="values">Precisão</div>
+          <div class="values">Entrega</div>
+          <div class="values">Evolução</div>
         </div>
       </div>
       <div class="about-right">
-        <p class="aboutMe-text">// SOBRE MIM</p>
-        <h2 class="about-title">Dev com alma de Designer</h2>
-        <div class="diviser"></div>
+        <p class="aboutMe-text section-eyebrow">// SOBRE MIM</p>
+        <h2 class="about-title section-title">Dev com alma de Designer</h2>
+        <div class="divider-bar"></div>
         <p class="about-text">
           Tenho 21 anos, sou desenvolvedor frontend e designer gráfico baseado
           em <span>Guanambi, BA</span>. Estudo Ciência da Computação e construo
@@ -105,8 +104,141 @@
         </div>
       </div>
     </section>
-    <section id="projects"></section>
-    <section id="services-section"></section>
-    <section id="contact-section"></section>
+    <section id="projects-bg">
+      <div id="projects">
+        <div class="">
+          <p class="projects-semi-title section-eyebrow">// Serviços</p>
+          <h3 class="projects-title section-title">O que eu entrego<h3/>
+        </div>
+        <div class="divider-bar"></div>
+        <div class="services-grid">
+            <div class="projects-cards first-service">
+              <div> <i class="fa-solid fa-bolt"></i> </div>
+              <p class="cards-title">Landing Pages de Alta Conversão</p>
+              <p class="cards-texts">Design estratégico + código limpo. Páginas que convencem e convertem — copy, visual e performance trabalhados juntos.</p>
+              <hr>
+              <ul class="entregaveis">
+                <li>Design responsivo e mobile-first</li>
+                <li>HTML/CSS/JS semântico e performático</li>
+                <li>Copywriting orientado a conversão</li>
+              </ul>
+            </div>
+            <div class="projects-cards second-service">
+               <div> <i class="fa-solid fa-globe"></i> </div>
+              <p class="cards-title"> Sites Institucionais</p>
+              <p class="cards-texts">Presença digital profissional para pequenos negócios e profissionais liberais. Simples, rápido, funcional.</p>
+              <ul class="entregaveis">
+                <li>Design responsivo e mobile-first</li>
+                <li>HTML/CSS/JS semântico e performático</li>
+                <li>Copywriting orientado a conversão</li>
+              </ul>
+            </div>
+            <div class="projects-cards third-service">
+               <div> <i class="fa-solid fa-palette"></i> </div>
+              <p class="cards-title"> Site + Indentidade Visual </p>
+              <p class="cards-texts">O pacote completo para quem está começando. Um site profissional com a cara certa do negócio — paleta de cores, tipografia e presença digital em um só lugar.</p>
+              <ul class="entregaveis">
+                <li>Paleta de cores personalizada</li>
+                <li>Seleção de tipografia</li>
+                <li>Site com até 4 seções</li>
+              </ul>
+            </div>
+          </div>
+      </div>
+    </section>
+    <section id="service-bg">
+      <div class="service-section">
+        <p class="services-eyebrow section-eyebrow">// Projetos</p>
+        <h3 class="services-title section-title">Trabalho real</h3>
+        <div class="divider-bar"></div>
+        <div class="services projects-grid">
+          <a href="https://canela-cafe-orpin.vercel.app/" target="_blank" class="project-card">
+            <div class="project-thumb">
+              <img src="cafeteria.png" alt="Preview Landing Page Cafeteria">
+              <span class="badge-live">● LIVE</span>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+              </div>
+              <h3 class="project-title">Landing Page — Cafeteria</h3>
+              <p class="project-desc">Identidade visual completa + landing page responsiva para cafeteria artesanal.</p>
+              <div class="project-links">
+                <span class="project-link">Ver Site →</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="contact-bg">
+  <div id="contact-section">
+
+    <div class="contact-left">
+      <p class="section-eyebrow">// Contato</p>
+      <h2 class="section-title">Vamos trabalhar<br>juntos?</h2>
+      <div class="divider-bar"></div>
+      <p class="contact-desc">Tem um projeto em mente? Me conta o que você precisa — landing page, identidade visual ou site. Vou te dizer se consigo ajudar.</p>
+      <div class="contact-status">Respondo em até 24h</div>
+      <div class="contact-socials">
+        <a href="https://github.com/joaolferr" target="_blank" class="social-link">
+          <i class="fa-brands fa-github"></i>
+          github.com/joaolferr
+        </a>
+        <a href="https://www.instagram.com/joao_lferr?igsh=MXF5Y2VyOWNnNWp4ZQ==" target="_blank" class="social-link">
+          <i class="fa-brands fa-instagram"></i>
+          @joao_lferr
+        </a>
+        <a href="https://wa.me/5577991541249" target="_blank" class="social-link">
+          <i class="fa-brands fa-whatsapp"></i>
+          WhatsApp
+        </a>
+      </div>
+    </div>
+
+    <form class="contact-form" onsubmit="handleSubmit(event)" novalidate>
+      <div class="form-row">
+        <div class="field">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome" required autocomplete="name">
+        </div>
+        <div class="field">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="seu@email.com" required autocomplete="email">
+        </div>
+      </div>
+      <div class="field">
+        <label for="assunto">Assunto</label>
+        <input type="text" id="assunto" name="assunto" placeholder="Landing page, site, identidade visual...">
+      </div>
+      <div class="field">
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" placeholder="Me conta sobre o seu projeto..." required></textarea>
+      </div>
+      <button type="submit" class="submit-btn" id="submitBtn">
+        Enviar Mensagem →
+      </button>
+    </form>
+
+  </div>
+</section>
+
+  <script>
+  function handleSubmit(e) {
+    e.preventDefault();
+    const btn = document.getElementById('submitBtn');
+    btn.textContent = '✓ Mensagem enviada!';
+    btn.style.background = '#16a34a';
+    btn.disabled = true;
+    setTimeout(() => {
+      btn.textContent = 'Enviar Mensagem →';
+      btn.style.background = '';
+      btn.disabled = false;
+      e.target.reset();
+    }, 3000);
+  }
+</script>
+
   </body>
 </html>
