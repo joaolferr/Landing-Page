@@ -171,19 +171,6 @@ a {
   line-height: 2em;
 }
 
-.view-projects-button {
-  padding: 1em 1.7em;
-  border-radius: var(--radius);
-  background-color: var(--accent);
-  margin-right: 1em;
-}
-
-.work-button {
-  padding: 1em 1.7em;
-  border-radius: var(--radius);
-  background-color: var(--bg-surface);
-  border: 1px solid var(--bg-border);
-}
 
 .logo-name {
   background-color: var(--bg-border);
@@ -731,17 +718,36 @@ section{
 }
 
 #presentation-buttons{
-  display:flex;
-  justify-content:center;
-  gap:1rem;
-  flex-wrap:wrap;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
 }
+
 
 .view-projects-button,
 .work-button{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 14px 28px;
+
+  line-height: 1;
+
+  width: auto;
+
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+}
+
+.view-projects-button{
+  background: var(--accent);
+}
+
+.work-button{
+  background: var(--bg-surface);
+  border: 1px solid var(--bg-border);
 }
 
 @media (max-width: 992px){
@@ -807,6 +813,16 @@ section{
     line-height:normal;
   }
 
+    #presentation-buttons{
+    flex-direction: column;
+    width: 100%;
+    max-width: 320px;
+  }
+
+  #presentation-buttons a{
+    width: 100%;
+  }
+
   .professional-name{
     font-size:2.8rem;
   }
@@ -855,9 +871,5 @@ section{
   #about-section{
     padding:4rem 1rem;
   }
-
-  .view-projects-button,
-  .work-button{
-    width:100%;
-  }
+ 
 }
