@@ -13,6 +13,7 @@ html {
 }
 
 :root {
+  color-scheme: light dark;
   --bg-deep: #06050d;
   --bg-surface: #0f0e1c;
   --bg-border: #1a1830;
